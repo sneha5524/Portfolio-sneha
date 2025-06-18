@@ -121,7 +121,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/resume" element={<Navigate to="https://docs.google.com/document/d/1h2I8FLRlOW4u3TrikLd5v2I6w12hF81T_4h-pKg8-0c/edit?usp=sharing" replace />} />
+      <Route path="/resume" element={<Navigate to="https://docs.google.com/document/d/1h2I8FLRlOW4u3TrikLd5v2I6w12hF81T_4h-pKg8-0c/export?format=pdf" replace />} />
       <Route path="/" element={
         <div className="min-h-screen bg-gray-50">
           {/* Navigation */}
