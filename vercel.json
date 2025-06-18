@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "https://docs.google.com/document/d/1h2I8FLRlOW4u3TrikLd5v2I6w12hF81T_4h-pKg8-0c/edit?usp=sharing",
+      "permanent": true
+    }
+  ]
+}
