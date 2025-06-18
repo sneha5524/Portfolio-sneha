@@ -20,6 +20,7 @@ import {
   Menu,
   X
 } from 'lucide-react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -119,9 +120,12 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <Routes>
+      <Route path="/resume" element={<Navigate to="https://docs.google.com/document/d/1h2I8FLRlOW4u3TrikLd5v2I6w12hF81T_4h-pKg8-0c/edit?usp=sharing" replace />} />
+      <Route path="/" element={
+        <div className="min-h-screen bg-gray-50">
+          {/* Navigation */}
+          <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="font-bold text-xl text-blue-800">Sneha Chaudhari</div>
@@ -571,6 +575,8 @@ function App() {
         </div>
       </footer>
     </div>
+      } />
+    </Routes>
   );
 }
 
